@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="png" href="icon.png">
+    <title>Grand SR Restaurant</title>
+    <link rel="stylesheet" href="resv.css">
+</head>
+<body>
+    <div class="box">
+        <h1 id="main">TABLE RESERVATION FORM</h1><hr>
+        <form ><!--</form>action="/myaction.php" name="myForm" onsubmit="return ValidateForm()" method="post"> -->
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname" placeholder="First name" required><br><br>
+            <p id="name1"></p>
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" placeholder="Last name" required><br><br>
+            <p id="name2"></p><hr>
+            <label for="people">No.of peoples</label><br>
+            <input type="number" id="select_people" name="people" required><br><br>
+            <p id="people1"></p>
+            <br><hr><label for="mobile">Phone Number</label>
+            <input type="text" id="mobile" placeholder="enter your 10 digit mobile number"><br><br><hr>
+            <p id="mobile1"></p>
+            <label for="date">Reservation Date</label>
+            <input type="date" name="date" id="date"><br><br><hr>
+            <p id="date1"></p>
+            <label for="time">Timing</label>
+            <input type="text" id="selectbox" placeholder="Ex 10:00 AM"><br><br>
+            <p id="time1"></p>
+            <hr>
+
+            <br><br>
+            <input type="submit" id="submit">
+            <button id="clear">Clear</button>
+            <button id="back"><a href="https://home.smritiazm123.repl.co/">Back</a></button>
+        </form>
+    </div>
+    <div class="popup">
+        <div class="popup-content">
+            <img src="done.jpg" alt="done">
+            <p id="res">Reservation Done Sucessfully</p>
+            <button id="OK">OK</button>
+        </div>
+    </div>
+    <script src="resv.js"></script>
+</body>
+</html>
